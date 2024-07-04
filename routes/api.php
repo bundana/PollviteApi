@@ -15,4 +15,4 @@ Route::get('/users/{id}', [UserController::class, 'show']);
 Route::prefix('/url-shortener')->name('url-shortener.')->controller(URLShortenerController::class)->group(function (){
     Route::any('/create', 'store')->name('create');
 });
-require __DIR__.'/auth.php';
+// require __DIR__.'/auth.php';
